@@ -41,7 +41,7 @@ function OperationClick(btn){
         } 
     }
 
-    if(op=="root" || op == "log"){
+    if(op=="root" || op == "log" || op == "^"){
         if(lastNum==-1){
             display="Choose a number first";
             clearDisplay = true;
