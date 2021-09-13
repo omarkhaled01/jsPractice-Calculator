@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#firstPanel{
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+}
+
+#firstPanel button{
+    background-color: black;
+    width: 20vw;
+    height: 10vh;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+#secondPanel{
+    height: 900px;
+    width: 100%;
+}
+
+#secondPanel_calcContainer{
+    width: 30%;
+    height: 70%;
+    margin: 70px auto;
+    border: 2px solid black;
+}
+
+#output{
+    height: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#outputText{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#outputResult{
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+.calcButton{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#equalButton{
+    width: 52%;
+}
+
+#container1, #container2, #container3{
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse wrap;
+}
