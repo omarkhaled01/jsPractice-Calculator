@@ -41,14 +41,11 @@ function OperationClick(btn){
         } 
     }
 
-    if(op=="root" || op == "log" || op == "^"){
-        if(lastNum==-1){
-            display="Choose a number first";
-            clearDisplay = true;
-            return UpdateDisplay();
-        }
+    if(lastNum==-1){
+        display="Choose a number first";
+        clearDisplay = true;
+        return UpdateDisplay();
     }
-
     switch(op){
         case "+":
             operation = 0;
@@ -77,6 +74,11 @@ function OperationClick(btn){
 };
 
 function Compute(){
+    if(lastNum==-1){
+        display="Choose a number first";
+        clearDisplay = true;
+        return UpdateDisplay();
+    }
     if(number!=""&&lastNum!=-1){
        lastNum = parseInt(number);
         number="";
